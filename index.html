@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script src="https://cdn.jsdelivr.net/npm/zod@3.20.6/lib/index.umd.js"></script>
-    </head>
-
-    <body>
-        <!-- TODO! -->
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zod Playground | Teknologi Umum</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<zp-outlet></zp-outlet>
+		<script type="importmap">
+			{
+				"imports": {
+					"~/components/": "./components/",
+					"~/utils/": "./utils/",
+					"zod": "https://cdn.jsdelivr.net/npm/zod@3.20.6/lib/index.esm.js"
+				}
+			}
+		</script>
+		<script type="module" src="./main.js"></script>
+	</body>
 </html>
