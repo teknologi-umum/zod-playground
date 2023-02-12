@@ -1,0 +1,25 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	background: #181818;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+zp-outlet {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
